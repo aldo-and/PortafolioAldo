@@ -1,0 +1,96 @@
+nav {
+    padding: 0 25px; /* Espaciado lateral para evitar que los elementos estén muy pegados */
+}
+  
+nav ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox para alinear los elementos */
+    justify-content: flex-end; /* Mueve los elementos a la derecha */
+}
+  
+nav ul li {
+    margin-left: 15px; /* Espaciado entre los elementos de la lista */
+    font-family: Arial, sans-serif;
+    
+}
+a{color: #ffffff;}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  color: #ffffff;
+  background-color: #232222;
+}
+
+header {
+  background-color: #020c64;
+  padding: 10px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 25px;
+  
+}
+#formulario {
+    width: 900%;
+    max-width: 600px;
+    margin-left: 20px;
+    float: left; /* Centra el div horizontalmente */
+    background-color: #020c64;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido del div */
+    align-items: center; /* Centra verticalmente el contenido del div */
+    flex-direction: column; /* Asegura que los elementos se coloquen en columna */
+    height: auto; /* Ajusta la altura según el contenido */
+}
+#formulario input[type="text"],
+#formulario input[type="email"],
+#formulario textarea {
+  width: 100%; /* Expande el input al 100% del ancho del contenedor */
+  padding: 10px; /* Añade espacio interno dentro del input */
+  margin-bottom: 20px; /* Añade espacio entre los campos */
+  border-radius: 5px; /* Opcional: redondea los bordes */
+  border: 1px solid #000000; /* Añade un borde */
+  box-sizing: border-box; /* Asegura que el padding se incluya dentro del ancho total */
+}
+
+#formulario textarea {
+  height: 100px; /* Ajusta la altura del textarea */
+}
+#redes {
+  float: right;                /* Mueve el div a la derecha */
+  width: 400px;                /* Ajusta el ancho del div */
+  height: auto;                /* El alto será ajustado automáticamente según el contenido */
+  text-align: center;
+  padding: 20px;               /* Añade espacio interno dentro del div */
+  background-color:#020c64;   /* (Opcional) Cambia el color de fondo */
+  border-radius: 10px;         /* (Opcional) Añade bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* (Opcional) Añade sombra */
+}
+
+#redes a {
+ 
+  margin-bottom: 10px;         /* Añade espacio entre los enlaces */
+  font-size: 20px;             /* Aumenta el tamaño del texto */
+}
+
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0; /* Inicialmente invisible */
+      transform: translateY(40px); /* Mueve el elemento 20px hacia abajo */
+    }
+    to {
+      opacity: 1; /* Completamente visible */
+      transform: translateY(0); /* Vuelve a su posición original */
+    }
+}
+  
+  /* Aplica la animación al cargar la página */
+.fade-in {
+    opacity: 0; /* Inicialmente oculto */
+    animation: fadeIn 1s ease-out forwards; /* Aplica la animación de desvanecimiento */
+}
+  

@@ -1,0 +1,76 @@
+
+nav {
+    padding: 0 25px; /* Espaciado lateral para evitar que los elementos estén muy pegados */
+}
+  
+nav ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox para alinear los elementos */
+    justify-content: flex-end; /* Mueve los elementos a la derecha */
+}
+  
+nav ul li {
+    margin-left: 15px; /* Espaciado entre los elementos de la lista */
+    font-family: Arial, sans-serif;
+    
+}
+a{color: #ffffff;}
+  
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    color: #ffffff;
+    background-color: #232222;
+}
+  
+header {
+    background-color: #020c64;
+    padding: 10px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+    
+}
+
+#proyectos {
+    padding: 40px;           /* Añade un poco de espaciado dentro del contenedor */
+}
+
+.proyecto-contenido {
+    display: flex;           /* Activa el modo de diseño flexbox para el texto y la imagen */
+    justify-content: space-between; /* Espacia los elementos (p y figure) */
+    align-items: center;     /* Alinea verticalmente los elementos si es necesario */
+}
+
+#proyectos h2 {
+    font-size: 28px;         /* Tamaño del título */
+    margin-bottom: 10px;     /* Espacio debajo del título */
+    text-align: left;        /* Alineación a la izquierda (opcional) */
+}
+
+#proyectos p {
+    width: 60%;
+    margin-top: 0;           /* Elimina el margen superior */
+    line-height: 1.6;        /* Mejora la legibilidad del texto */
+    font-size: 20px;
+}
+
+ 
+@keyframes fadeIn {
+    from {
+      opacity: 0; /* Inicialmente invisible */
+      transform: translateY(40px); /* Mueve el elemento 20px hacia abajo */
+    }
+    to {
+      opacity: 1; /* Completamente visible */
+      transform: translateY(0); /* Vuelve a su posición original */
+    }
+}
+  
+  /* Aplica la animación al cargar la página */
+.fade-in {
+    opacity: 0; /* Inicialmente oculto */
+    animation: fadeIn 1s ease-out forwards; /* Aplica la animación de desvanecimiento */
+}
+  
